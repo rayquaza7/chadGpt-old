@@ -9,5 +9,8 @@
       "matches": ["https://chat.openai.com/chat"]
     }
   ],
-  "host_permissions": ["https://chat.openai.com/chat"]
+  "icons": {
+    "16": "images/chad.png",
+    "48": "images/chad.png"
+  }
 }
