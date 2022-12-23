@@ -8,5 +8,6 @@
       "js": ["scripts/content.js"],
       "matches": ["https://chat.openai.com/chat"]
     }
-  ]
+  ],
+  "host_permissions": ["https://chat.openai.com/chat"]
 }
