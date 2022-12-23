@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "ChadGpt",
+  "version": "1.0",
+  "description": "",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://chat.openai.com/chat"]
+    }
+  ]
+}
