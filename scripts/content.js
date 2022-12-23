@@ -8,11 +8,10 @@ const button = document.querySelector(
 
 function promptEngineer() {
   return `Answer the question as truthfully as possible, and if you're unsure of the answer, say "Sorry, I don't know".
+You have access to a Python interpreter, so if you are not able to answer a question from memory, you can write a program that will answer the question.
 
-    You have access to a Python interpreter, so if you are not able to answer a question from memory, you can write a program that will answer the question.
-
-    Q. ${input.value}
-    A.`;
+Q. ${input.value}
+A.`;
 }
 
 // only intercept if cmd + enter is pressed
