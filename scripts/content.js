@@ -17,7 +17,5 @@ Q. ${input.value}`;
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && e.metaKey) {
     input.value = promptEngineer();
-    console.log("pressed cmd + enter");
-    console.log(input.value);
   }
 });
