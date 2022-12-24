@@ -1,0 +1,43 @@
+#popup {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+/* The tabs CSS */
+#tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab.active,
+.tab:hover {
+  background-color: #ddd;
+}
+
+/* The tab content CSS */
+#tab-content {
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+.tab-pane {
+  display: none;
+  padding: 20px;
+}
+
+.tab-pane.active {
+  display: block;
+}

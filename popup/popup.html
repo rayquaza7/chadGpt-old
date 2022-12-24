@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <div id="popup">
+      <!-- The tabs -->
+      <div id="tabs">
+        <button class="tab active" data-tab="plain">Plain</button>
+        <button class="tab" data-tab="not-plain">Not Plain</button>
+      </div>
+      <!-- The tab content -->
+      <div id="tab-content">
+        <!-- The "plain" tab -->
+        <div class="tab-pane active" data-tab="plain">
+          <p>This is the "plain" tab.</p>
+        </div>
+        <!-- The "not plain" tab -->
+        <div class="tab-pane" data-tab="not-plain">
+          <p>This is the "not plain" tab.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./popup.js" type="module"></script>
+  </body>
+</html>
