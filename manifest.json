@@ -7,7 +7,7 @@
     "16": "images/chad.png",
     "48": "images/chad.png"
   },
-  "permissions": ["tabs", "activeTab", "scripting"],
+  "permissions": ["tabs", "activeTab", "scripting", "storage"],
   "host_permissions": ["https://chat.openai.com/chat/*"],
   "content_scripts": [
     {
@@ -19,6 +19,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup.html",
+    "default_title": "Press Ctrl(Win)/Command(Mac)+Enter to add details to your prompt"
   }
 }
