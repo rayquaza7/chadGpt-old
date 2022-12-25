@@ -2,12 +2,12 @@
   "manifest_version": 3,
   "name": "ChadGpt",
   "version": "1.0",
-  "description": "POV: You're a Chad prompt engineer",
+  "description": "Add context to your chatGpt prompts automatically. Gives chatGpt search engine powers!!",
   "icons": {
     "16": "images/chad.png",
     "48": "images/chad.png"
   },
-  "permissions": ["tabs", "activeTab", "scripting", "storage"],
+  "permissions": ["tabs", "activeTab", "scripting", "storage", "webRequest"],
   "host_permissions": ["https://chat.openai.com/chat/*"],
   "content_scripts": [
     {
@@ -20,6 +20,6 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Press Ctrl(Win)/Command(Mac)+Enter to add details to your prompt"
+    "default_title": "Press Ctrl(Win)/Command(Mac)+Enter to add context to your prompt"
   }
 }

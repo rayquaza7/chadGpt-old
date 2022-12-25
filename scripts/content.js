@@ -17,18 +17,33 @@ const answerArea = document.querySelector(
 // KEYBOARD SHORTCUTS
 //////////////////////////////////////////////
 
-// only intercept if cmd + enter is pressed
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && e.metaKey) {
-    input.value = promptEngineer();
-  }
-});
-
-function promptEngineer() {
-  const basicPrompt = `Answer the question as truthfully as possible, and if you're unsure of the answer, say "Sorry, I don't know".\n\nYou have access to a Python interpreter, so if you are not able to answer a question from memory, you can write a program that will answer the question.\n`;
-  const prompt = `Q. ${input.value}`;
-  return basicPrompt + prompt;
-}
+// // intercept cmd + enter and change textarea before it is submitted
+// input.addEventListener(
+//   "keydown",
+//   async (e) => {
+//     if (e.key === "Enter" && e.metaKey) {
+//       console.log(e);
+//       e.preventDefault();
+//       // let formData = new FormData();
+//       // formData.append("question", input.value);
+//       // let res = await fetch(
+//       //   "https://openai-embeddings-4cfs0t5e3-rayquaza7.vercel.app/context",
+//       //   {
+//       //     method: "POST",
+//       //     body: formData,
+//       //   }
+//       // );
+//       // let data = await res.json();
+//       // console.log(data);
+//       // input.value = data.context;
+//       // console.log(input.value);
+//       // button.click();
+//     }
+//   },
+//   {
+//     capture: true,
+//   }
+// );
 
 //////////////////////////////////////////////
 // ADD REPLIT BUTTON TO CODE BLOCKS

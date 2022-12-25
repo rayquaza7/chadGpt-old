@@ -2,48 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="popup.css" />
+    <style>
+      #extension-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+        width: 250px;
+      }
+    </style>
   </head>
   <body>
     <div id="extension-container">
-      <div id="extension-header">
-        <h1>ChadGpt</h1>
-      </div>
-      <div id="extension-content">
-        <p>
-          Press cmd+enter when you're done typing your prompt to add context,
-          safety bypass text or helpful details!
-        </p>
-        <p>
-          Please choose which of the following you would like to add to your
-          prompt:
-        </p>
-      </div>
-      <div>
-        <label>
-          <input type="checkbox" id="context" />
-          <span class="checkmark">Give it context</span>
-        </label>
-      </div>
-      <div>
-        <label>
-          <input type="checkbox" id="python" />
-          <span class="checkmark"> Give it access to python interpreter </span>
-        </label>
-      </div>
-      <div>
-        <label>
-          <input type="checkbox" id="honest" />
-          <span class="checkmark"> Tell it to be more honest </span>
-        </label>
-      </div>
-      <div>
-        <label>
-          <input type="checkbox" id="nsfw" />
-          <span class="checkmark">Add text to bypass safety filters</span>
-        </label>
-      </div>
-      
-    <script src="popup.js"></script>
+      <p>
+        Press cmd+enter when you're done typing your prompt to add context. It
+        will get the top 2 results from DuckDuckGo, automatically find the most
+        relevant info for your query and give it to chatGpt
+      </p>
+    </div>
   </body>
 </html>
