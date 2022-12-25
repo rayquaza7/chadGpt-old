@@ -1,0 +1,11 @@
+wikipedia
+re
+pandas
+numpy
+openai
+flask
+pinecone-client
+datasets
+python-dotenv
+ipynb
+tqdm
