@@ -15,9 +15,6 @@
       "matches": ["https://chat.openai.com/chat/*"]
     }
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
   "action": {
     "default_popup": "popup.html",
     "default_title": "Press Ctrl(Win)/Command(Mac)+Enter to add context to your prompt"

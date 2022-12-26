@@ -17,33 +17,23 @@ const answerArea = document.querySelector(
 // KEYBOARD SHORTCUTS
 //////////////////////////////////////////////
 
-// // intercept cmd + enter and change textarea before it is submitted
-// input.addEventListener(
-//   "keydown",
-//   async (e) => {
-//     if (e.key === "Enter" && e.metaKey) {
-//       console.log(e);
-//       e.preventDefault();
-//       // let formData = new FormData();
-//       // formData.append("question", input.value);
-//       // let res = await fetch(
-//       //   "https://openai-embeddings-4cfs0t5e3-rayquaza7.vercel.app/context",
-//       //   {
-//       //     method: "POST",
-//       //     body: formData,
-//       //   }
-//       // );
-//       // let data = await res.json();
-//       // console.log(data);
-//       // input.value = data.context;
-//       // console.log(input.value);
-//       // button.click();
-//     }
-//   },
-//   {
-//     capture: true,
-//   }
-// );
+// block when button is clicked
+button.addEventListener("click", async (e) => {
+  if (input.value.startsWith("Context")) {
+    return;
+  }
+  e.preventDefault();
+  let formData = new FormData();
+  formData.append("question", input.value);
+  let res = await fetch("https://openai-embeddings.vercel.app/context", {
+    method: "POST",
+    body: formData,
+  });
+  let data = await res.json();
+  input.value = data.context + "\nQ." + input.value;
+  console.log(input.value);
+  button.click();
+});
 
 //////////////////////////////////////////////
 // ADD REPLIT BUTTON TO CODE BLOCKS
